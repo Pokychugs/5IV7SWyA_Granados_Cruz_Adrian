@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado Cesar</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">    
+</head>
+<body>
+    <div class="contenedor">
+        <hr>
+        <br>
+        <div class="flecha">
+            <div class="casita">
+                <div class="grupo">
+                    <label for="texto">Texto que desea cifrar:</label>
+                    <textarea type="text" name="texto" id="texto" class="control"></textarea>
+                </div>
+            </div>
+
+            <div class="casita">
+                <div class="grupo">
+                    <label for="desplazamiento">Desplazamiento</label>
+                    <input type="range" min="1" max="25" step="1" id="desplazamiento" name="desplazamiento" class="rango">
+                </div>
+            </div>
+            <br>
+            <div class="casita">
+                <div class="grupo">
+                    <label for="cifrado">Texto Cifrado:</label>
+                    <input type="text" id="cifrado" name="cifrado" class="control" disabled>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="casita">
+                <div class="grupo">
+                    <label for="texto">Texto que deseas descifrar:</label>
+                    <textarea type="text" name="texto2" id="texto2" class="control"></textarea>
+                </div>
+            </div>
+
+            <div class="casita">
+                <div class="grupo">
+                    <label for="desplazamiento">Desplazamiento</label>
+                    <input type="range" min="1" max="25" step="1" id="desplazamiento2" name="desplazamiento2" class="rango">
+                </div>
+            </div>
+            <br>
+            <div class="casita">
+                <div class="grupo">
+                    <label for="descifrado">Texto Descifrado:</label>
+                    <input type="text" id="descifrado" name="descifrado" class="control" disabled>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./Js/cesar.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,99 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    animation: gradientAnimation 10s ease infinite;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Para evitar que el fondo animado se desborde */
+}
+
+/* Contenedor principal */
+.contenedor {
+    font-family: 'Amatic SC', sans-serif;
+    font-family: 'Caveat', cursive;
+    font-family: 'Kalam', cursive;
+    font-family: 'Lilita One', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.2rem;
+    background-color: rgba(219, 197, 247, 0.8); /* Color de fondo pastel con transparencia */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilos para los elementos de entrada de texto */
+.control,
+.rango,
+textarea {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #d0d0d0; /* Color de borde pastel */
+    border-radius: 5px;
+    background-color: #ffffff; /* Color de fondo de entrada de texto */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para los botones */
+.btn {
+    background: #7b24ff; /* Color de fondo pastel */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #0846ff; /* Color de fondo pastel más oscuro al pasar el ratón */
+}
+
+/* Estilos para la etiqueta de texto Cifrado/Descifrado */
+label {
+    font-weight: bold;
+    color: #333; /* Color de texto gris oscuro */
+}
+
+/* Estilos para la línea horizontal */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc; /* Color de línea gris */
+}
+
+button {
+    background: #7b24ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #0846ff;
+}
+
+/* Animación del fondo */
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(135deg, #9365f6, #f385fd);
+    }
+    50% {
+        background: linear-gradient(135deg, #9d65f6, #fb85fd);
+    }
+    100% {
+        background: linear-gradient(135deg, #8c84fa, #8f97f4);
+    }
+}

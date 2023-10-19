@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    animation: backgroundAnimation 10s infinite alternate; /* Animación de fondo */
+    overflow: hidden; /* Evitar que los elementos salgan por los lados */
+    box-sizing: border-box; /* Evitar que se desborde el contenido */
+}
+
+/* Animación de fondo */
+@keyframes backgroundAnimation {
+    0% {
+        background-color: #cc94ec;
+    }
+    50% {
+        background-color: #f2b5d4; /* Cambio de color a pastel */
+    }
+    100% {
+        background-color: #cc94ec;
+    }
+}
+
+/* Contenedor principal */
+.contenedor {
+    text-align: center;
+    background-color: rgba(168, 5, 209, 0.8); /* Fondo blanco con transparencia */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(27, 26, 26, 0.2); /* Sombra suave */
+    max-width: 500px; /* Limitar el ancho del contenedor */
+    width: 100%; 
+    box-sizing: border-box; /* Evitar el desbordamiento de contenido */
+    overflow: hidden; /* Evitar que los elementos salgan por los lados */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+/* Estilos para los elementos de entrada */
+.control,
+.rango{
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.control:focus,
+.rango:focus{
+    border-color: #4CAF50; /* Cambio de color al enfocar */
+}
+
+/* Estilos para los elementos de etiqueta */
+label {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+/* Estilos para los botones */
+.btn {
+    background-color: #23cb29; /* Color de botones pastel */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #45a049; /* Cambio de color al pasar el mouse */
+}
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Aplicar animación a elementos específicos */
+.fade-in {
+    animation: fadeIn 1s;
+}

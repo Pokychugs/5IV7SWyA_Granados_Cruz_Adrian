@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&family=Kalam&family=Lilita+One&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado Cesar</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/Cesar.css">    
+</head>
+<body>
+    <div class="contenedor">
+        <hr>
+        <br>
+        <div class="flecha">
+            <div class="casita">
+                <div class="grupo">
+                    <label for="texto">Texto que desea Cifrar / Descifrar:</label>
+                    <textarea type="text" name="texto" id="texto" class="control"></textarea>
+                </div>
+            </div>
+            <div class="casita">
+                <div class="grupo">
+                    <label for="desplazamiento">Desplazamiento</label>
+                    <input type="range" min="1" max="25" step="1" id="desplazamiento" name="desplazamiento" class="rango">
+                </div>
+            </div>
+            <p><input type="button" class="btn btn-info" value="Cifrar" onclick="cifrado()">
+                <input type="button" class="btn btn-info" value="Descifrar" onclick="descifrado()"></p>
+            <br>
+            <div class="casita">
+                <div class="grupo">
+                    <label for="cifrado">Texto Cifrado / Descifrado:</label>
+                    <textarea id="cifrado" onpaste="return false;" ondrop="return false;"></textarea>
+                </div>
+            </div>
+            <p><input type="button" class="btn btn-info" value="Copiar" onclick="colocar1()">
+                <input type="button" class="btn btn-info" value="Reiniciar" onclick="reiniciar()"></p>
+            <hr>
+            <br>
+            <button onclick="Index()">Regresar</button>
+        </div>
+    </div>
+
+    <script src="./Js/Cesar.js"></script>
+    
+</body>
+</html>
